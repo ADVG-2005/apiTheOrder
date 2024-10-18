@@ -5,3 +5,4 @@ from apps.factura.serializers import FacturaSerializer
 class FacturaViewSet(ModelViewSet):
     queryset = Factura.objects.all()
     serializer_class = FacturaSerializer
+    http_method_names = ['get','post']
